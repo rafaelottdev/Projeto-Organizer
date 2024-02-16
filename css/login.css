@@ -4,7 +4,7 @@
     background-color: var(--sign-up-login-background-color);
 }
 
-.main-content {
+.login-main-content {
     width: 100vw;
     height: 100vh;
 
@@ -13,9 +13,9 @@
     justify-content: center;
 }
 
-.content-container {
+.login-content-container {
     width: 330px;
-    height: 500px;
+    height: 340px;
 
     border-radius: 25px;
     border: 1px solid white;
@@ -28,33 +28,32 @@
 
     color: white;
     background-color: var(--form-background-color);
-    /*  */
 }
 
-.sign-up-title {
+.login-title {
     margin: 15px 0px;
     letter-spacing: 2px;
 
     font-family: "Manrope", sans-serif;
 }
 
-.sign-up-form {
+.login-form {
     width: inherit;
     padding: 0px 15px;
     margin-bottom: 15px;
 }
 
-.input-container {
+.login-input-container {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.input-container > label {
+.login-input-container > label {
     font-size:.9em;
 }
 
-.input-container > input {
+.login-input-container > input {
     width: 100%;
     height: 40px;
 
@@ -75,7 +74,7 @@
     bottom: 40px;
 }
 
-.form-sign-up-button {
+.form-login-button {
     width: 300px;
     height: 45px;
 
@@ -95,7 +94,7 @@
     background-color: var(--button-background-color);
 }
 
-.login-page-button {
+.sign-up-page-button {
     width: 75px;
 
     position: absolute;
@@ -107,7 +106,7 @@
 
 }
 
-.login-page-button > img {
+.sign-up-page-button > img {
     width: inherit;
     height: inherit;
 
@@ -116,12 +115,13 @@
 
 }
 
-.login-page-button > p {
-    margin-bottom: 1.5px;
-    margin-right: 15px;
+.sign-up-page-button > p {
+    margin-bottom: -1px;
+    margin-left: 10px;
 
     z-index: 1;
     letter-spacing: 1px;
+    font-size: .8em;
 
     color: white;
     font-family: "Signika", sans-serif;
