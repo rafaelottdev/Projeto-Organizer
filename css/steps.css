@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.steps-body {
+    background-color: var(--form-background-color);
+}
+
+.steps-header {
+    width: 100vw;
+
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-container-steps-header {
+    font-size: 1em;
+    font-family: "Manrope", sans-serif;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.steps-menu {
+    color: white;
+    font-size: 1.5em;
+}
+
+.steps-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.step-1 {
+    width: 330px;
+
+    padding: ;
+
+    border-radius: 25px;
+
+    background-color: blue;
+}
+
+.step-1-header {
+}
+
+.step-1-header-title-container {
+}
+
+.step-1-header-filter-icon {
+}
+
+.add-button {
+}
