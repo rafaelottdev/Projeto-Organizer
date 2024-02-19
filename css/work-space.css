@@ -7,13 +7,13 @@
 
 .header-work-space {
     padding: 0px 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .header-work-space-content {
     height: 55px;
 
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 0px 20px 0px 15px;
 
     border-radius: 25px;
@@ -35,9 +35,13 @@
     width: 33px;
     height: 33px;
 
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background-color: red;
+    border-radius: 50%;
+    font-size: 1.3em;
+    background-color: var(--form-background-color);
 }
 
 .main-content-work-space {
@@ -54,6 +58,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.header-main-content__content-1 h2 {
+    letter-spacing: 1px;
+    font-family: "Manrope", sans-serif;
 }
 
 .header-main-content__content-2 {
@@ -83,30 +92,60 @@
 }
 
 .unfinished-plans-section {
+    margin-bottom: 40px;
 }
+.container-slider {
+    width: 345px;
+    height: 110px;
+
+    overflow: hidden;
+    position: relative;
+}
+
 .slider {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 0px;
 }
+
 .unfinished-slider {
 }
 .plan-1 {
-}
-
-.unfinished-plan-1 {
-    width: 140px;
+    width: 150px;
     height: 90px;
+
+    margin-right: 10px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-radius: 15px;
+    letter-spacing: 1.2px;
+    font-size: 1em;
+
+    user-select: none;
 
     background-color: var(--sign-up-login-background-color);
 }
+
+.unfinished-plan-1 {
+    
+}
 .finished-plans-section {
 }
+
 .finished-title-container {
+    margin-bottom: 30px;
+
+    letter-spacing: 1px;
+    font-family: "Manrope", sans-serif;
 }
+
 .finished-slider {
 }
 .finished-plan-1 {
