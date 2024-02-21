@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-.fundo {
-    background-color: var(--sign-up-login-background-color);
+.l-index-body {
+    background-color: var(--background-color-1);
+    overflow: hidden;
 }
 
-.main-content {
+.content-container {
     width: 100vw;
     height: 100vh;
 
@@ -13,12 +14,12 @@
     justify-content: center;
 }
 
-.content-container {
+.l-main-content {
     width: 330px;
     height: 500px;
 
     border-radius: 25px;
-    border: 1px solid white;
+    border: 1px solid var(--default-color-1);
 
     display: flex;
     flex-direction: column;
@@ -26,35 +27,35 @@
 
     position: relative;
 
-    color: white;
-    background-color: var(--form-background-color);
-    /*  */
+    color: var(--default-color-1);
+    background-color: var(--background-color-2);
 }
 
-.sign-up-title {
+.entry-title {
     margin: 15px 0px;
     letter-spacing: 2px;
 
     font-family: "Manrope", sans-serif;
 }
 
-.sign-up-form {
+.c-entry-form {
     width: inherit;
     padding: 0px 15px;
     margin-bottom: 15px;
 }
 
-.input-container {
+.c-input-container {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.input-container > label {
+.c-input-container__input-description {
     font-size:.9em;
+    letter-spacing: 1px;
 }
 
-.input-container > input {
+.c-input-container__input {
     width: 100%;
     height: 40px;
 
@@ -62,20 +63,20 @@
     padding-left: 3px;
     font-size: 1.1em;
 
-    color: white;
+    color: var(--default-color-1);
     background-color: transparent;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid var(--default-color-1);
 }
 
-.eye-icon {
-    font-size: .9em;
+.c-eye-icon {
+    font-size: .8em;
 
     position: absolute;
     right: 10px;
     bottom: 40px;
 }
 
-.form-sign-up-button {
+.c-form-btn {
     width: 300px;
     height: 45px;
 
@@ -91,11 +92,11 @@
     cursor: pointer;
     border-radius: 10px;
 
-    color: white;
-    background-color: var(--button-background-color);
+    color: var(--default-color-1);
+    background-color: var(--background-color-3);
 }
 
-.login-page-button {
+.c-btn-change-entry {
     width: 75px;
 
     position: absolute;
@@ -107,7 +108,7 @@
 
 }
 
-.login-page-button > img {
+.c-btn-change-entry__image {
     width: inherit;
     height: inherit;
 
@@ -116,13 +117,13 @@
 
 }
 
-.login-page-button > p {
+.c-btn-change-entry__text {
     margin-bottom: 1.5px;
     margin-right: 15px;
 
     z-index: 1;
     letter-spacing: 1px;
 
-    color: white;
+    color: var(--default-color-1);
     font-family: "Signika", sans-serif;
 }

@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 .word-space-body {
-    background-color: var(--form-background-color);
-    color: #F4F4F4;
+    background-color: var(--background-color-2);
+    color: var(--default-color-1);
 }
 
 .header-work-space {
@@ -22,11 +22,11 @@
     align-items: center;
     justify-content: space-between;
 
-    background-color: var(--sign-up-login-background-color);
+    background-color: var(--background-color-1);
 }
 
 .logo {
-    font-family: "Miltonian";
+    font-family: "Miltonian", sans-serif;
     font-size: 1.3em;
     letter-spacing: 3px;
 }
@@ -43,11 +43,11 @@
     font-size: 1.3em;
 
     color: white;
-    background-color: var(--form-background-color);
+    background-color: var(--background-color-2);
 }
 
 .main-content-work-space {
-    padding: 0px 20px;
+    padding: 0px var(--default-padding);
 }
 
 .header-main-content {
@@ -82,7 +82,7 @@
     font-size: 1.1em;
 
     color: white;
-    background-color: var(--sign-up-login-background-color);
+    background-color: var(--background-color-1);
 }
 
 .header-main-content__content-2 > i {
@@ -90,12 +90,13 @@
     left: 15px;
     top: 13px;
 
-    color: blue;
+    color: var(--secondary-color);
 }
 
 .unfinished-plans-section {
     margin-bottom: 40px;
 }
+
 .container-slider {
     width: 345px;
     height: 110px;
@@ -114,8 +115,6 @@
     left: 0px;
 }
 
-.unfinished-slider {
-}
 .plan-1 {
     width: 150px;
     height: 90px;
@@ -132,13 +131,7 @@
 
     user-select: none;
 
-    background-color: var(--sign-up-login-background-color);
-}
-
-.unfinished-plan-1 {
-    
-}
-.finished-plans-section {
+    background-color: var(--background-color-1);
 }
 
 .finished-title-container {
@@ -146,9 +139,4 @@
 
     letter-spacing: 1px;
     font-family: "Manrope", sans-serif;
-}
-
-.finished-slider {
-}
-.finished-plan-1 {
 }

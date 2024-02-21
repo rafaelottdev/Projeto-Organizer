@@ -13,46 +13,45 @@
     <link rel="stylesheet" href="./css/imports.css">
     <title>Organizer - Cadastro</title>
 </head>
-<body class="fundo">
-    <main class="main-content">
-        <div class="content-container">
+<body class="l-index-body">
+    <div class="content-container">
+        <main class="l-main-content">
+            <h1 class="entry-title">Cadastro</h1>
 
-            <h1 class="sign-up-title">Cadastro</h1>
-
-            <form class="sign-up-form" id="sign-up-form">
-                <div class="input-container">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name">
+            <form class="c-entry-form" id="entry-form">
+                <div class="c-input-container">
+                    <label class="c-input-container__input-description" for="name">Nome</label>
+                    <input type="text" id="name" class="c-input-container__input">
                 </div>
 
-                <div class="input-container">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email">
+                <div class="c-input-container">
+                    <label class="c-input-container__input-description" for="email">E-mail</label>
+                    <input type="email" id="email" class="c-input-container__input">
                 </div>
 
-                <div class="input-container">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password">
-                    <i class="fa-solid fa-eye-slash eye-icon"></i>
+                <div class="c-input-container">
+                    <label class="c-input-container__input-description" for="password">Senha</label>
+                    <input type="password" id="password" class="c-input-container__input">
+                    <i class="fa-solid fa-eye-slash c-eye-icon"></i>
                 </div>
 
-                <div class="input-container">
-                    <label for="confirm-password">Confirmar Senha</label>
-                    <input type="password" id="confirm-password">
-                    <i class="fa-solid fa-eye-slash eye-icon"></i>
+                <div class="c-input-container">
+                    <label class="c-input-container__input-description" for="confirm-password">Confirmar Senha</label>
+                    <input type="password" id="confirm-password" class="c-input-container__input">
+                    <i class="fa-solid fa-eye-slash c-eye-icon"></i>
                 </div>
             </form>
 
             <div>
-                <button class="form-sign-up-button" form="form-sign-up-button">Se cadastrar</button>
+                <button class="c-form-btn" form="entry-form">Se cadastrar</button>
             </div>
 
-            <a class="login-page-button" href="./login-page.html">
-                <img src="./img/seta-direita-cadastro.png" alt="">
-                <p>Login</p>
+            <a class="c-btn-change-entry" href="./login-page.html">
+                <img  class="c-btn-change-entry__image" src="./img/seta-direita-cadastro.png" alt="">
+                <p class="c-btn-change-entry__text">Login</p>
             </a>
 
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>

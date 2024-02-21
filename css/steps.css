@@ -7,7 +7,7 @@
 .steps-header {
     width: 100vw;
 
-    padding: 30px 20px;
+    padding: 30px var(--default-padding);
 
     display: flex;
     align-items: center;
@@ -18,11 +18,11 @@
     font-size: 1em;
     font-family: "Manrope", sans-serif;
     letter-spacing: 1.5px;
-    color: white;
+    color: var(--default-color-1);
 }
 
 .steps-menu {
-    color: white;
+    color: var(--default-color-1);
     font-size: 1.5em;
 }
 
@@ -30,27 +30,44 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .step-1 {
     width: 330px;
 
-    padding: ;
+    padding: 30px;
 
     border-radius: 25px;
 
-    background-color: blue;
+    background-color: var(--sign-up-login-background-color);
 }
 
 .step-1-header {
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    letter-spacing: 1px;
+
+    color: var(--default-color-1);
 }
 
-.step-1-header-title-container {
-}
+.add-button button {
+    width: 100%;
+    height: 40px;
 
-.step-1-header-filter-icon {
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.add-button {
+    border-radius: 15px;
+
+    font-family: "Signika", sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+
+    color: var(--default-color-1);
+    background-color: var(--third-color);
 }

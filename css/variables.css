@@ -1,7 +1,15 @@
 @charset "UTF-8";
 
 :root {
-    --sign-up-login-background-color: #202133;
-    --form-background-color: #1F2154;
-    --button-background-color: #F25E5A;
+    --background-color-1: #202133;
+    --background-color-2: #1F2154;
+    --background-color-3: #F25E5A;
+
+    --secondary-color: #5B61F3;
+    --third-color: #12121C;
+
+    --default-color-1: white;
+    --default-color: black;
+
+    --default-padding: 20px;
 }
