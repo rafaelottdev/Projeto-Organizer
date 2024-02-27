@@ -75,7 +75,7 @@ function inputTextValidation() {
    }
 
    else {
-      window.location.href = '../../work-space.html'
+      window.location.replace('../../work-space.html')
    }
 }
 
@@ -96,3 +96,4 @@ signUpBtn.addEventListener('click', inputTextValidation)
 // quando correto não dar focus
 // redirecionar pra uma pagina interna
 // sugestão no celular (dar um jeito de tirar)
+// senha ta ruim na pagina online
