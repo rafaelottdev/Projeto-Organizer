@@ -7,6 +7,7 @@ const signUpPasswordIcon = document.querySelectorAll('.c-eye-icon')
 function showPassword(clickEvent) {
     const elemento = clickEvent.target
     const inputElemento = elemento.parentNode.children[1]
+    inputElemento.focus()
 
     if(elemento.classList.contains('fa-eye-slash')) {
         elemento.classList.remove('fa-eye-slash')
