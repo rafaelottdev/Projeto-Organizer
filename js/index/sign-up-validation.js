@@ -11,7 +11,7 @@ function inputValidation(text, regex, element) {
    if(regex.test(text)) {
       element.style.borderBottomColor = "green"
       validation = true
-      elemento.classList.remove('needFocus')
+      element.classList.remove('needFocus')
 
       if(passwordId == "confirm-password") {
          if(password.value == text) {
@@ -20,7 +20,9 @@ function inputValidation(text, regex, element) {
 
          else {
             element.style.borderBottomColor = "#F25E5A"
+            
          }
+         console.log(password, text)
       }
    }
    
@@ -88,3 +90,9 @@ signUpBtn.addEventListener('click', inputTextValidation)
 
 // a confirmação não precisa ter a validação completa, basta fazer a validação pra ver se é igual a senha, vai da na mesma e vai ficar mais facil - tirar a confirmação da validação de regex (criar um beckup pra caso n funcione)
 // fazer so um array percorrendo todos os input e fazendo as verificações
+
+
+// erros - focus pra ultima linha, a senha quando deixada igual ao confirmar senha não torna o confirmar senha valido
+// quando correto não dar focus
+// redirecionar pra uma pagina interna
+// sugestão no celular (dar um jeito de tirar)

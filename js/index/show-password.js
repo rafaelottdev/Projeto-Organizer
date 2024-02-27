@@ -1,29 +1,29 @@
-const password = document.querySelector('password')
-const passwordConfirm = document.querySelector('confirm-password')
-
 const signUpPasswordIcon = document.querySelectorAll('.c-eye-icon')
 
-
 function showPassword(clickEvent) {
-    const elemento = clickEvent.target
-    const inputElemento = elemento.parentNode.children[1]
-    inputElemento.focus()
+    const element = clickEvent.target
+    const inputElement = element.parentNode.children[1]
+    inputElement.focus()
 
-    if(elemento.classList.contains('fa-eye-slash')) {
-        elemento.classList.remove('fa-eye-slash')
-        elemento.classList.add('fa-eye')
+    if(element.classList.contains('fa-eye-slash')) {
+        element.classList.remove('fa-eye-slash')
+        element.classList.add('fa-eye')
 
-        inputElemento.type = "text"
+        inputElement.type = "text"
     }
 
     else {
-        elemento.classList.remove('fa-eye')
-        elemento.classList.add('fa-eye-slash')
+        element.classList.remove('fa-eye')
+        element.classList.add('fa-eye-slash')
 
-        inputElemento.type = "password"
+        inputElement.type = "password"
     }
 }
 
 signUpPasswordIcon.forEach((icon) => {
     icon.addEventListener('click', showPassword)
 })
+
+// a confirmação não precisa ter a validação completa, basta fazer a validação pra ver se é igual a senha, vai da na mesma e vai ficar mais facil - tirar a confirmação da validação de regex (criar um beckup pra caso n funcione)
+// fazer so um array percorrendo todos os input e fazendo as verificações
+// e se eu apagar o password e ficar igual?
