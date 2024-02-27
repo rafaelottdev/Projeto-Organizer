@@ -2,9 +2,6 @@ const signUpEmail = document.querySelector('#email')
 const signUpPasswordList = document.querySelectorAll('.password')
 const signUpBtn = document.querySelector('.sign-up-button')
 
-
-
-
 let validation = true
 
 function inputValidation(text, regex, element) {
@@ -14,6 +11,7 @@ function inputValidation(text, regex, element) {
    if(regex.test(text)) {
       element.style.borderBottomColor = "green"
       validation = true
+      elemento.classList.remove('needFocus')
 
       if(passwordId == "confirm-password") {
          if(password.value == text) {
@@ -29,7 +27,10 @@ function inputValidation(text, regex, element) {
    else {
       element.style.borderBottomColor = "#F25E5A"
       validation = false
+      element.classList.add('needFocus')
    }
+
+   
 }
 
 function emailValidation(keyupEvent) {
@@ -59,6 +60,10 @@ function inputTextValidation() {
       if(inputText == "") {
          contentVerify.push(false)
       }
+
+      if(inputElement.classList.contains('needFocus')) {
+         inputElement.focus()
+      }
    })
 
    const hasFalse = contentVerify.includes(false)
@@ -82,5 +87,4 @@ signUpBtn.addEventListener('click', inputTextValidation)
 
 
 // a confirmação não precisa ter a validação completa, basta fazer a validação pra ver se é igual a senha, vai da na mesma e vai ficar mais facil - tirar a confirmação da validação de regex (criar um beckup pra caso n funcione)
-// validar pra ver se tudo ta preenchido
 // fazer so um array percorrendo todos os input e fazendo as verificações
