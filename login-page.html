@@ -10,36 +10,33 @@
     <link rel="stylesheet" href="./css/imports.css">
     <title>Organizer - Login</title>
 </head>
-<body class="fundo">
-    <main class="login-main-content">
-        <div class="login-content-container">
+<body class="l-body">
+    <div class="content-container">
+        <main class="l-login-main-content">
+            <h1 class="c-entry-title">Login</h1>
 
-            <h1 class="login-title">Login</h1>
-
-            <form class="login-form" id="login-sign-up-form">
-
-                <div class="login-input-container">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email">
+            <form class="c-entry-form" id="login-sign-up-form">
+                <div class="c-input-container">
+                    <label class="c-input-container__input-description" for="email">E-mail</label>
+                    <input type="email" id="email" class="c-input-container__input">
                 </div>
 
-                <div class="login-input-container">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password">
-                    <i class="fa-solid fa-eye-slash eye-icon"></i>
+                <div class="c-input-container">
+                    <label class="c-input-container__input-description" for="password">Senha</label>
+                    <input type="password" id="password" class="c-input-container__input">
+                    <i class="fa-solid fa-eye-slash c-eye-icon"></i>
                 </div>
             </form>
 
             <div>
-                <button class="form-login-button" form="login-sign-up-form">Fazer login</button>
+                <button class="c-form-btn" form="login-sign-up-form">Fazer login</button>
             </div>
 
-            <a class="sign-up-page-button" href="./index.html">
-                <img src="./img/seta-esquerda-login.png" alt="">
+            <a class="c-btn-change-entry" href="./index.html">
+                <img class="c-btn-change-entry__image" src="./img/seta-esquerda-login.png" alt="">
                 <p>Cadastro</p>
             </a>
-
-        </div>
-    </main>
+        </main>
+    </div>
 </body>
 </html>

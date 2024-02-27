@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.l-index-body {
+.l-body {
     background-color: var(--background-color-1);
     overflow: hidden;
 }
@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-.l-main-content {
+.l-index-main-content {
     width: 330px;
     height: 500px;
 
@@ -31,11 +31,11 @@
     background-color: var(--background-color-2);
 }
 
-.entry-title {
+.c-entry-title {
     margin: 15px 0px;
     letter-spacing: 2px;
 
-    font-family: "Manrope", sans-serif;
+    font-family: "Signika", sans-serif;
 }
 
 .c-entry-form {

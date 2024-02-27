@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-.steps-body {
-    background-color: var(--form-background-color);
+.l-list-body {
+    background-color: var(--background-color-2);
 }
 
-.steps-header {
+.l-list-header {
     width: 100vw;
 
     padding: 30px var(--default-padding);
@@ -14,35 +14,54 @@
     justify-content: space-between;
 }
 
-.title-container-steps-header {
-    font-size: 1em;
-    font-family: "Manrope", sans-serif;
-    letter-spacing: 1.5px;
+.c-list-title-container {
+    display: flex;
+}
+
+.c-list-title {
+    letter-spacing: 2px;
+    user-select: none;
+    color: var(--default-color-1);
+    font-family: "Signika", sans-serif;
+}
+
+.c-list-title--bigger-size {
+    font-size: 	2em;
+}
+
+.c-list-title--smaller-size {
+    font-size: 1.7em;
+}
+
+.c-list-icon-button {
+    padding: 10PX;
+    margin-left: 2px;
+    background-color: transparent;
     color: var(--default-color-1);
 }
 
-.steps-menu {
+.l-list-header__menu {
     color: var(--default-color-1);
     font-size: 1.5em;
 }
 
-.steps-main-content {
+.l-list-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.step-1 {
+.l-list-container__list-1 {
     width: 330px;
 
     padding: 30px;
 
     border-radius: 25px;
 
-    background-color: var(--sign-up-login-background-color);
+    background-color: var(--background-color-1);
 }
 
-.step-1-header {
+.l-list-container__header {
     margin-bottom: 30px;
 
     display: flex;
@@ -54,7 +73,11 @@
     color: var(--default-color-1);
 }
 
-.add-button button {
+.l-list-container__filter-icon {
+    font-size: 1.1em;
+}
+
+.c-list-button {
     width: 100%;
     height: 40px;
 
