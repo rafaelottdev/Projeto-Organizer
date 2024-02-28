@@ -61,6 +61,7 @@
 
     margin-bottom: 20px;
     padding-left: 3px;
+    padding-right: 40px;
     font-size: 1.1em;
 
     color: var(--default-color-1);
@@ -68,12 +69,16 @@
     border-bottom: 3px solid var(--default-color-1);
 }
 
-.c-eye-icon {
-    font-size: .8em;
+.c-eye-icon-container {
+    padding: 7px;
 
     position: absolute;
-    right: 10px;
-    bottom: 40px;
+    right: 3px;
+    bottom: 25px;
+}
+
+.c-eye-icon {
+    font-size: .8em;
 }
 
 .c-form-btn {

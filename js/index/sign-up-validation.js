@@ -94,7 +94,4 @@ signUpBtn.addEventListener('click', inputTextValidation)
 
 // erros - focus pra ultima linha, a senha quando deixada igual ao confirmar senha não torna o confirmar senha valido
 // quando correto não dar focus
-// redirecionar pra uma pagina interna
 // sugestão no celular (dar um jeito de tirar)
-// senha ta ruim na pagina online
-// aumentar o raio do icone de olho - ta ruim
