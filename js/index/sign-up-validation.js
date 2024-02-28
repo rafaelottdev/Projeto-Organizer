@@ -75,7 +75,7 @@ function inputTextValidation() {
    }
 
    else {
-      window.location.href('https://rafaelottdev.github.io/Projeto-Organizer/work-space.html')
+      window.location.href = 'https://rafaelottdev.github.io/Projeto-Organizer/work-space.html'
    }
 }
 
