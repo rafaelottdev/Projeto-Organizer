@@ -75,7 +75,7 @@ function inputTextValidation() {
    }
 
    else {
-      window.location.replace('../../work-space.html')
+      window.location.href('https://rafaelottdev.github.io/Projeto-Organizer/work-space.html')
    }
 }
 
@@ -97,3 +97,4 @@ signUpBtn.addEventListener('click', inputTextValidation)
 // redirecionar pra uma pagina interna
 // sugestão no celular (dar um jeito de tirar)
 // senha ta ruim na pagina online
+// aumentar o raio do icone de olho - ta ruim
