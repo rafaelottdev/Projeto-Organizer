@@ -132,3 +132,53 @@
     color: var(--default-color-1);
     font-family: "Signika", sans-serif;
 }
+
+.c-error-message {
+    width: 240px;
+
+    padding: 10px;
+
+    position: absolute;
+    left: 100%;
+    top: 12px;
+
+    transform: translate(50%, 0%);
+
+    font-family: "Cabin", sans-serif;
+
+    border: 1px solid var(--background-color-3);
+    border-radius: 15px;
+
+    letter-spacing: .5px;
+    color: var(--default-color-1);
+    background-color: #1F2154;
+}
+
+.error {
+    animation: errorAnimation .2s;
+}
+
+@keyframes errorAnimation {
+    0% {
+        margin: 0px 0px 30px 0px;
+    }
+
+    25% {
+        margin: 0px 0px 30px 7px;
+    }
+
+    50% {
+        margin: 0px 7px 30px 0px;
+    }
+
+    75% {
+        margin: 0px 0px 30px 7px;
+    }
+
+    100% {
+        margin: 0px 0px 30px 0px;
+    }
+}
+
+/* icone de filtro ta muito colado com a borda, muito pra direita */
+/* o botão de login no cadastro, o texto ta um pouco pra baixo, botar um pouco pra cima */

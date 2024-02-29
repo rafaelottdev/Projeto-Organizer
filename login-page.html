@@ -18,18 +18,21 @@
             <form class="c-entry-form" id="login-sign-up-form">
                 <div class="c-input-container">
                     <label class="c-input-container__input-description" for="email">E-mail</label>
-                    <input type="email" id="email" class="c-input-container__input">
+                    <input type="email" autocomplete="off" id="email" class="c-input-container__input">
                 </div>
 
                 <div class="c-input-container">
                     <label class="c-input-container__input-description" for="password">Senha</label>
                     <input type="password" id="password" class="c-input-container__input">
-                    <i class="fa-solid fa-eye-slash c-eye-icon"></i>
+
+                    <div class="c-eye-icon-container">
+                        <i class="fa-solid fa-eye-slash c-eye-icon"></i>
+                    </div>
                 </div>
             </form>
 
             <div>
-                <button class="c-form-btn" form="login-sign-up-form">Fazer login</button>
+                <button class="c-form-btn login-button">Fazer login</button>
             </div>
 
             <a class="c-btn-change-entry" href="./index.html">
@@ -38,5 +41,8 @@
             </a>
         </main>
     </div>
+
+    <script src="./js/global/show-password.js"></script>
+    <script src="./js/login/login-validation.js"></script>
 </body>
 </html>
