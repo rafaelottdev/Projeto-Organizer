@@ -101,7 +101,7 @@
     background-color: var(--background-color-3);
 }
 
-.c-btn-change-entry {
+.c-btn-change-entry-sign-up {
     width: 75px;
 
     position: absolute;
@@ -111,6 +111,18 @@
     align-items: center;
     justify-content: center;
 
+}
+
+.c-btn-change-entry-sign-up > p {
+    margin-bottom: 2px;
+    margin-left: 10px;
+
+    z-index: 1;
+    letter-spacing: 1px;
+    font-size: .8em;
+
+    color: var(--default-color-1);
+    font-family: "Signika", sans-serif;
 }
 
 .c-btn-change-entry__image {
@@ -180,5 +192,4 @@
     }
 }
 
-/* icone de filtro ta muito colado com a borda, muito pra direita */
 /* o botão de login no cadastro, o texto ta um pouco pra baixo, botar um pouco pra cima */
